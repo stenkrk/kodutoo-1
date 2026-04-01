@@ -1,29 +1,56 @@
-body{
-    margin:0;
-    padding:0;
-    background-color: black;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace; /* AI soovitas mul robot Monoks panna */
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+    background: radial-gradient(circle, #020024, #090979, #000000);
+}
+#bgCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+#container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    z-index: 1;
+}
+#clockContainer {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#dateContainer {
     font-size: 30px;
-    color:white;
+    margin-bottom: 20px;
 }
-
-#container{
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
+#buttonContainer button,
+#buttonContainer select {
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
 }
-
-#clockContainer, #dateContainer{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
+#author {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: rgba(255,255,255,0.7);
 }
-
-button{
-    font-size: 1.1em;
-    border-radius: 20px;
-    padding: 0px;
-    height: 40px;
-    width: 40px;
+@keyframes fade {
+    0%,100% { opacity:1; } /* AI parandas mul seda osa */
+    50% { opacity:0.2; }
 }
+/* AI ütles mulle kuidas animatsiooni fade osa kirjutada .css failis */
+#seconds { animation: fade 1s infinite; }
+#minutes { animation: fade 2s infinite; }
+#hours   { animation: fade 4s infinite; }
