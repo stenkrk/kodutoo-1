@@ -1,4 +1,57 @@
 <!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Kell</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+
+
+    <canvas id="bgCanvas"></canvas>
+
+
+    <div id="container">
+        <div id="clockContainer">
+            <span id="hours">00</span> :
+            <span id="minutes">00</span> :
+            <span id="seconds">00</span>
+        </div>
+
+        <div id="dateContainer">
+            <span id="day">01</span> .
+            <span id="month">01</span> .
+            <span id="year">2000</span>
+        </div>
+
+        <div id="buttonContainer">
+            <button id="bigger">A+</button>
+            <button id="smaller">A-</button>
+            <button id="color"> Värv</button>
+
+            <button id="reset">Reset</button>
+            <button id="blackout">Must</button>
+
+            <select id="fontSelect">
+                <option value="Roboto Mono">Roboto Mono</option>
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="author">
+        <a href="https://github.com/stenkrk/kodutoo-1" target="_blank">  <!-- Ei teadnud kas seda mõeldi repositooriumi all -->
+            github.com/stenkrk/kodutoo-1
+        </a> | Sten Kreek
+    </div>
+
+    <script src="clock.js"></script>
+</body>
+</html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
