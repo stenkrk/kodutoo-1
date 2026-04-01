@@ -42,9 +42,14 @@ body {
 }
 #author {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
-    color: rgba(255,255,255,0.7);
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+
+    font-size: 14px;
 }
 @keyframes fade {
     0%,100% { opacity:1; } /* AI parandas mul seda osa */
